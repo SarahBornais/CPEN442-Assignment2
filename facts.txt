@@ -1,0 +1,13 @@
+Things we know (or probably know) about this cipher:
+- Symmetry mapping: pairs have swapped encryption/decryption (e.g. if AB->CD, then BA->DC)
+- Know COMXMA should be encrypted in multiple places in the ciphertext
+    - Will see the encoded versions of both MX and XM depending on where the digraph split occurs
+    - Maybe the most common mirrored pair in the ciphertext is MX/XM encoded
+    - The most common mirrored pair is VW/WV
+    - However, neither appear in the most common 6 letter strings, which we would expect
+- Fairly likely that the code word doesn't have Z in it, so Z is likely in box 25 of the key
+- Also about a 50% chance the last letter of the plaintext is X, since we add that if the plaintext character length was odd
+- Missing letter J in the ciphertext, so J/I are combined in the key
+- Have 600 possible digraphs, or 300 if we don't care about letter order
+- Should have a higher proportion of X occurrences in the plaintext, since we split double letters with it
+- If we see double letters in our attempted decryption, then our attempted decryption is wrong
