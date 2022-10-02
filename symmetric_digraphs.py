@@ -55,14 +55,17 @@ def compated_combined_symmetric_digraphs(item1, item2):
     elif sum1 > sum2: return -1
     else: return 0
 
-ciphertext = get_ciphertext()
+def print_symmetric_digraphs():
+    ciphertext = get_ciphertext()
 
-digraphs = n_graphs(ciphertext, 2)
-# print(digraphs)
+    digraphs = n_graphs(ciphertext, 2)
+    # print(digraphs)
 
-digraph_frequencies = dict(Counter(digraphs))
-# print(digraph_frequencies)      
+    digraph_frequencies = dict(Counter(digraphs))
+    # print(digraph_frequencies)      
 
-combined = combine_symmetric_digraphs(digraph_frequencies)
-for pair in combined:
-    print(pair)
+    combined = combine_symmetric_digraphs(digraph_frequencies)
+    for pair in combined:
+        print(pair)
+
+# print_symmetric_digraphs()
