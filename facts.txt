@@ -8,6 +8,7 @@ Things we know (or probably know) about this cipher:
 - Fairly likely that the code word doesn't have Z in it, so Z is likely in box 25 of the key
 - Also about a 50% chance the last letter of the plaintext is X, since we add that if the plaintext character length was odd
 - Missing letter J in the ciphertext, so J/I are combined in the key
-- Have 600 possible digraphs, or 300 if we don't care about letter order
+- Have about 600 possible digraphs, or about 300 if we don't care about letter order
 - Should have a higher proportion of X occurrences in the plaintext, since we split double letters with it
 - If we see double letters in our attempted decryption, then our attempted decryption is wrong
+- A letter/pair will NEVER map to itself or its mirror
