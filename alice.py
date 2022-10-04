@@ -65,7 +65,6 @@ quadgram_frequencies = {}
 for i in range(0, len(alphabet_text), 2):
     maybe_comxma = alphabet_text[i:i+6]
     if maybe_comxma == "COMXMA":
-        print(alphabet_text[i:i+10])
         quadgram = alphabet_text[i+6:i+10]
         if quadgram in quadgram_frequencies.keys():
             quadgram_frequencies[quadgram] += 1
